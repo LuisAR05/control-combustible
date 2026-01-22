@@ -1,0 +1,22 @@
+<div class="container py-4">
+  <h3 class="mb-4">Marcas de Gasolineras en Cali</h3>
+  
+  <div *ngIf="marcas$ | async as marcas; else loading">
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+      <div class="col" *ngFor="let marca of marcas">
+        <div class="card h-100 text-center shadow-sm">
+          <img [src]="marca.logoUrl" class="card-img-top p-3" alt="Logo de {{ marca.nombre }}" style="object-fit: contain; height: 150px;">
+          <div class="card-footer">
+            <h5 class="card-title mb-0">{{ marca.nombre }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #loading>
+    <div class="text-center">
+      <p>Cargando marcas...</p>
+    </div>
+  </ng-template>
+</div>
