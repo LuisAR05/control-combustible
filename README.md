@@ -1,27 +1,43 @@
-# ControlCombustible
+# 🚗 Control de Consumo de Combustible - Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+Este es un proyecto desarrollado como parte de mi formación en Ingeniería de Sistemas, enfocado en el desarrollo web moderno y la gestión de datos. La aplicación permite a los usuarios llevar un control detallado de los gastos y el rendimiento de combustible de sus vehículos.
 
-## Development server
+## 📋 Descripción del Proyecto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+La aplicación resuelve la necesidad de monitorear la eficiencia vehicular, permitiendo registrar cada carga de combustible y calculando automáticamente métricas clave para el usuario.
 
-## Code scaffolding
+Inicialmente, el proyecto exploró diferentes tecnologías de persistencia como **Google Sheets API** y **Firebase**, pero actualmente se encuentra implementado con un stack de **Angular** y **MongoDB**, demostrando flexibilidad para integrar diferentes tipos de bases de datos.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## ✨ Características Principales
 
-## Build
+- **Registro de Cargas:** Formulario para ingresar fecha, kilometraje y costo de la carga.
+- **Cálculos de Rendimiento:** Algoritmos internos para determinar kilómetros recorridos entre cargas y consumo promedio por distancia.
+- **Control Financiero:** Visualización clara del dinero total invertido en combustible.
+- **Historial Detallado:** Tabla dinámica con el registro histórico de todas las operaciones.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🛠️ Tecnologías Utilizadas
 
-## Running unit tests
+- **Frontend:** [Angular](https://angular.io/) (Estructura de componentes y servicios).
+- **Base de Datos:** [MongoDB](https://www.mongodb.com/) (Persistencia de datos).
+- **Integraciones previas:** Firebase, Google Database.
+- **Lenguaje:** TypeScript / HTML5 Semántico / CSS3.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🚀 Logros Técnicos
 
-## Running end-to-end tests
+- Implementación de servicios en Angular para la gestión de datos.
+- Manejo de lógica de cálculos matemáticos en el frontend para métricas en tiempo real.
+- Experiencia en migración de esquemas de datos entre NoSQL (Firebase/MongoDB).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 📸 Vista Previa
 
-## Further help
+<p align="center">
+  <img src="./screenshots/dashboard1.png" alt="Dashboard Proyecto" width="600">
+</p>
+<p align="center">
+  <img src="./screenshots/dashboard1.1.png" alt="Dashboard Proyecto" width="600">
+</p>
+<p align="center">
+  <img src="./screenshots/dashboard2.png" alt="Dashboard Proyecto" width="600">
+</p>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Desarrollado por Luis David Angel Rincon - Estudiante de Ingeniería de Sistemas (UNIAJC)
